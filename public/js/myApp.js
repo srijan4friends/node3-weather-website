@@ -1,4 +1,4 @@
-console.log('loading the js functions!')
+console.log('loading the js functions !')
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
