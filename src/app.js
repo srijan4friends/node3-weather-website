@@ -124,5 +124,5 @@ app.get('*', (req, resp) => {
 // })
 
 app.listen(port, () => {
-    console.log('Starting the application on port 3000!')
+    console.log('Starting the application on port ' + port)
 })
