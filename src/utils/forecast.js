@@ -11,7 +11,8 @@ const forecast = (lattitude, longitude, callback) => {
             callback(body.error)
         }else{
             callback(undefined,body.daily.data[0].summary + ' It is currently '+ body.currently.temperature + ' degrees celcius out. There is a ' +
-            body.currently.precipProbability + '% chance of rain.')
+            body.currently.precipProbability + '% chance of rain.' + 'Highest temperture: ' + body.daily.data[0].temperatureHigh
+            + ' and lowest will be: ' + body.daily.data[0].temperatureLow)
         }
 
     })
